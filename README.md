@@ -1,4 +1,4 @@
-# Laravel 7 應用程式效能監控
+# Laravel 9 應用程式效能監控
 
 引入 sarfraznawaz2005 的 meter 套件來擴增提供快速尋找和修復應用程式問題所需的資訊，透過工具找出延遲情況和效率不佳的程式碼，藉此提升應用程式效能並減少資源消耗。
 
@@ -26,5 +26,5 @@ $ php artisan migrate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/jyhLpVd.png)
+![](https://i.imgur.com/EKDdd4b.png)
 > 協助快速查看 Laravel 應用程式的運作情形，並採取行動來解決問題

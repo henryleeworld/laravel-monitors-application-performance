@@ -4,7 +4,7 @@
             <div class="modal-body"></div>
 
             <div class="modal-footer" style="padding: 5px;">
-                <button type="button" class="btn btn-default" data-dismiss="modal">{{ trans('dashboard.close') }}</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">__('Close')</button>
             </div>
         </div>
     </div>

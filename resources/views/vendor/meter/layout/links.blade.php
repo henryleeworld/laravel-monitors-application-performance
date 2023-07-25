@@ -2,7 +2,7 @@
 
     <span class="navbar-brand">
         <strong class="logo fa fa-dashboard"></strong>
-        <strong>{{ trans('dashboard.title') }}</strong>
+        <strong>{{ __('Meter') }}</strong>
     </span>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -18,7 +18,7 @@
                 <a
                     class="btn btn-light {{meterActiveLink('meter_home') ? 'active' : ''}}"
                     href="{{route('meter_home')}}">
-                    {{ trans('dashboard.dashboard') }}
+                    {{ __('Dashboard') }}
                 </a>
             </li>
 
@@ -27,7 +27,7 @@
                     <a
                         class="btn btn-light {{meterActiveLink('meter_requests') ? 'active' : ''}}"
                         href="{{route('meter_requests')}}">
-                        {{ trans('dashboard.requests') }}
+                       {{  __('Requests') }}
                     </a>
                 </li>
             @endif
@@ -37,7 +37,7 @@
                     <a
                         class="btn btn-light {{meterActiveLink('meter_queries') ? 'active' : ''}}"
                         href="{{route('meter_queries')}}">
-                        {{ trans('dashboard.queries') }}
+                        {{ __('Queries') }}
                     </a>
                 </li>
             @endif
@@ -47,7 +47,7 @@
                     <a
                         class="btn btn-light {{meterActiveLink('meter_commands') ? 'active' : ''}}"
                         href="{{route('meter_commands')}}">
-                        {{ trans('dashboard.commands') }}
+                        {{ __('Commands') }}
                     </a>
                 </li>
             @endif
@@ -57,7 +57,7 @@
                     <a
                         class="btn btn-light {{meterActiveLink('meter_events') ? 'active' : ''}}"
                         href="{{route('meter_events')}}">
-                        {{ trans('dashboard.events') }}
+                        {{ __('Events') }}
                     </a>
                 </li>
             @endif
@@ -67,7 +67,7 @@
                     <a
                         class="btn btn-light {{meterActiveLink('meter_schedules') ? 'active' : ''}}"
                         href="{{route('meter_schedules')}}">
-                        {{ trans('dashboard.schedule') }}
+                        {{ __('Schedule') }}
                     </a>
                 </li>
             @endif
@@ -82,13 +82,13 @@
                     <a
                         class="btn btn-light {{meterActiveLink('meter_server_stats') ? 'active' : ''}}"
                         href="{{route('meter_server_stats')}}">
-                        {{ trans('dashboard.server') }}
+                        {{ __('Server') }}
                     </a>
                 </li>
             @endif
 
             <li class="nav-item dropdown ml-auto">
-                <a class="nav-link dropdown-toggle filter_name" href="#" data-toggle="dropdown">{{ trans('dashboard.today') }}</a>
+                <a class="nav-link dropdown-toggle filter_name" href="#" data-toggle="dropdown">{{ __('Today') }} </a>
                 <div class="dropdown-menu dropdown-menu-right">
                     @include('meter::layout.filters', ['route' => request()->route()->getName()])
                 </div>

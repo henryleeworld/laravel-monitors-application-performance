@@ -5,12 +5,12 @@
     <ul class="nav nav-tabs justify-content-center">
         <li class="nav-item">
             <a class="nav-item nav-link active" data-toggle="tab" href="#graph">
-                <i class="fa fa-bar-chart"></i> {{ trans('dashboard.graph') }}
+                <i class="fa fa-bar-chart"></i> {{ __('Graph') }}
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-item nav-link" data-toggle="tab" href="#index">
-                <i class="fa fa-table"></i> {{ trans('dashboard.queries') }}
+                <i class="fa fa-table"></i> {{ __('Queries') }}
             </a>
         </li>
     </ul>
@@ -18,13 +18,13 @@
     <div class="tab-content">
 
         <div class="tab-pane fade show active" role="tabpanel" id="graph">
-            @component('meter::components.chart', ['chart' => $queriesTimeChart, 'title' => trans('dashboard.query_times')])@endcomponent
+            @component('meter::components.chart', ['chart' => $queriesTimeChart, 'title' => 'Query Times'])@endcomponent
         </div>
 
         <div class="tab-pane fade" role="tabpanel" id="index">
             @component('meter::components.table',[
                 'url' => route('meter_queries_table'),
-                'columns' => [trans('dashboard.happened'), trans('dashboard.queries'), trans('dashboard.time'), trans('dashboard.slow'), trans('dashboard.more')],
+                'columns' => ['Happened', 'Query', 'Time', 'Slow', 'More'],
                 'columnDefs' => ['{"width": "10%", "targets": 0}', '{"width": "5%", "targets": -1}', '{"width": "10%", "targets": -2}', '{"width": "10%", "targets": -3}']
             ])
             @endcomponent

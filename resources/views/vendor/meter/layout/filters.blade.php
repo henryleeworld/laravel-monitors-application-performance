@@ -1,7 +1,7 @@
 <a
     class="dropdown-item btnfilter {{(request()->has('days') || request()->has('slow') || request()->has('all')) ? '' : 'active'}}"
     href="{{route($route)}}">
-    {{ trans('dashboard.today') }}
+    {{ __('Today') }}
 </a>
 
 @foreach(config('meter.filters', []) as $name => $days)
@@ -16,7 +16,7 @@
 <a
     class="dropdown-item btnfilter {{request()->has('all') ? 'active' : ''}}"
     href="{{route($route, ['all' => 1])}}">
-    All
+    {{ __('All') }}
 </a>
 
 @push('js')

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Sarfraz Ahmed (sarfraznawaz2005@gmail.com)">
 
-    <title>{{ trans('dashboard.title') }}</title>
+    <title>{{ __('Meter') }}</title>
 
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
